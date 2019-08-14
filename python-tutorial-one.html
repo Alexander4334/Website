@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Learn to Code!</title>
+
+    <!-- Loading Bootstrap CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Loading Bootflat CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootflat/2.0.4/css/bootflat.min.css" rel="stylesheet">
+
+    <!-- Loading jQuery JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Loading Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+
+    <!-- Loading Bootstrap JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+
+
+    <!-- Loading Raleway Font -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet">
+
+		<link rel="stylesheet" href="prism.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
+</head>
+<body>
+    <div class="well">
+        <h2 style="text-align: center">Python</h2>
+        <a href="index.html" style="display: block; text-align: center;">Return Home</a>
+    </div>
+</body>
+<div class="container">
+
+        <br>
+        <div class="well" style="padding-left: 4em; padding-right: 4em;">
+            <h4 style="text-align: center">Lesson 1: Basics</h4><br>
+            <p style="line-height: 2">
+                First we will start with the print command. print() will tell the computer to display
+                what ever is inside of the brackets. It is important to put quotes around text. You can use single quotes '', or double quotes "",
+                but the computer will not be able to read your command if the same block of text uses one of each. If you would like to include
+                a quotation mark or apostrophe, you must put a backslash \ before the quote so that the computer knows that this doesn't mean
+                the end of your text block. If you ever want python to treat a character differently in text you normally use a backslash. Examples
+                of things that use this are \t for a tab and a \n for a new line. To download python go to <a href="https://www.python.org/downloads/">python.org.</a>
+				Next download the latest version of Python 3. if you download python 2.7 this code will give you errors. To start coding, open the
+				IDLE window and make a new file. 
+                <pre class="language-python"><code>
+print("Hello World!\nThis is line 2")
+                </code></pre>
+		<pre class="language-python"><code>
+Hello World!
+This is line 2
+                </code></pre>
+            </p>
+	
+        </div>
+
+
+        <br>
+        <div class="well" style="padding-left: 4em; padding-right: 4em;">
+            <h4 style="text-align: center">Lesson 2: Variables</h4><br>
+            <p style="line-height: 2">
+                For all programming languages, variable are esential. In python a variable called variable with the value 5 would be coded as
+				variable = 5. Variables will store the value you set and when the variable name is used, accesses the value. For text you still
+				have to include quotes. The reason is because otherwilse, it will think you are referring to a variable. An example of a variable
+				use would be hello = "Hello, How are you?" and then print(hello). This will result in Hello, How are you? Variables can be strings,
+				which is the programming name for a string of text, a number, true or false, which are called booleans. There are other ways variables
+				can be used, but I will not be covering those. Variable names should be lowercase letters and underscores, otherwise the computer may have
+				trouble interpreting it. += allows number variables to add the number on the right side instead of reset to it. For strings, it concatenates 
+				them adding the line of text on the end of the already set variable. -= does the opposite, but only works for numbers. Variables can be set based
+				on their old value or on other variables. Another helpful thing is to change what type of variable something is. To  convert to an integer or int you use int().
+				For converting to strings it is str() and for decimals, called floats, it is float(). This is useful for print() as you cannot print an integer and string together.
+                <br><br>
+                This is an example of variable usage:
+                <pre class="language-python"><code>
+text = "The number is "
+number = 2
+number += number
+text_number = str(number)
+text += text_number
+print(text)
+
+The number is 4
+                </code></pre>
+                
+            </p>
+        </div>
+
+        <br>
+        <div class="well" style="padding-left: 4em; padding-right: 4em;">
+            <h4 style="text-align: center">Lesson 3: Input and math</h4><br>
+            <p style="line-height: 2">
+				For getting a user input you use input(). Strings or a string variable
+				can be put in the brackets. This will produce the text and then give
+				the user an opportunity to type. A user input is always a string and is stored with
+				a variable. If you would like the user input to be a number you can use int() or float()
+				Adding is +, subtraction is -, multiplication is *, division is / and ** is to the power of
+				something.
+                <pre class="language-html"><code>
+                user = input("pick the first number to add")
+                number = int(user)
+                user_second = input("pick the second number to add")
+                second_number = int(user_second)
+                result = user + user_second
+                print(user)
+                </code></pre>
+            </p>
+        </div>
+
+</div>
+<style>
+    body {
+        font-family: Raleway;
+    }
+</style>
